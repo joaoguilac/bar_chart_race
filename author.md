@@ -38,7 +38,6 @@ Para compilar e executar o programa manualmente basta digitar os seguintes coman
 
 ```
 $ mkdir bin (caso não tenha uma pasta para os executáveis, você deve criá-la com esse comando)
-$ cd bin/ (vá para a pasta dos executáveis criada para compilar e executar seu programa)
 $ g++ -Wall -std=c++11 -g source/src/bcr.cpp source/src/animation_mgr.cpp source/src/bar_chart.cpp -I source/include -o bin/bcr (compilar)
 $ ./bin/bcr [<options>] <input_data_file> (executar)
     Bar Chart Race options:
