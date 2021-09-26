@@ -63,3 +63,5 @@ $ ./build/bcr [<options>] <input_data_file> (executar)
       -f  <num> Animation speed in fps (frames per second).
                 Valid range is [1,24]. Default value is 24.
 ```
+
+Os arquivos com apostas devem ser salvos na pasta `data` (se isso for feito, para executar basta `./build/bcr ./data/<arquivo com sua aposta>`. Já existem alguns exemplos de arquivos de aposta nesta pasta. É possível utilizá-los, mas você pode criar o seu próprio também.
