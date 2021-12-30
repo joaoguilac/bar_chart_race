@@ -36,32 +36,42 @@ Program handles errors properly | 10 | 10
 
 Para compilar e executar o programa manualmente basta digitar os seguintes comandos em seu terminal:
 
-```
-$ mkdir bin (caso não tenha uma pasta para os executáveis, você deve criá-la com esse comando)
-$ g++ -Wall -std=c++11 -g source/src/bcr.cpp source/src/animation_mgr.cpp source/src/bar_chart.cpp -I source/include -o bin/bcr (compilar)
-$ ./bin/bcr [<options>] <input_data_file> (executar)
+```bash
+# Caso não tenha uma pasta para os executáveis, você deve criá-la com esse comando
+$ mkdir bin
+
+# Compilar
+$ g++ -Wall -std=c++11 -g source/src/bcr.cpp source/src/animation_mgr.cpp source/src/bar_chart.cpp -I source/include -o bin/bcr
+
+# Executar
+$ ./bin/bcr [<options>] <input_data_file>
     Bar Chart Race options:
-      -h  Print this help text.
-      -b  <num> Max # of bars in a single char.
-                Valid range is [1,15]. Default values is 5.
-      -f  <num> Animation speed in fps (frames per second).
-                Valid range is [1,24]. Default value is 24.
+      -h            # Print this help text.
+      -b  <num>     # Max '#' of bars in a single char.
+                    # Valid range is [1,15]. Default values is 5.
+      -f  <num>     # Animation speed in fps (frames per second).
+                    # Valid range is [1,24]. Default value is 24.
 ```
 
 ## Cmake
 
 Para compilar e executar o programa com o Cmake você precisa ter instalado pelo menos a versão 3.2. Em seguida, abra seu terminal e execute os seguintes comandos:
 
-```
-$ cmake -S source -B build (pede ao cmake para criar o diretório de compilação)
-$ cmake --build build (compilar)
-$ ./build/bcr [<options>] <input_data_file> (executar)
+```bash
+# Pede ao cmake para criar o diretório de compilação
+$ cmake -S source -B build
+
+# Compilar
+$ cmake --build build
+
+# Executar
+$ ./build/bcr [<options>] <input_data_file>
     Bar Chart Race options:
-      -h  Print this help text.
-      -b  <num> Max # of bars in a single char.
-                Valid range is [1,15]. Default values is 5.
-      -f  <num> Animation speed in fps (frames per second).
-                Valid range is [1,24]. Default value is 24.
+      -h            # Print this help text.
+      -b  <num>     # Max '#' of bars in a single char.
+                    # Valid range is [1,15]. Default values is 5.
+      -f  <num>     # Animation speed in fps (frames per second).
+                    # Valid range is [1,24]. Default value is 24.
 ```
 
 Os arquivos com apostas devem ser salvos na pasta `data` (se isso for feito, para executar basta `./build/bcr ./data/<arquivo com sua aposta>`. Já existem alguns exemplos de arquivos de aposta nesta pasta. É possível utilizá-los, mas você pode criar o seu próprio também.
