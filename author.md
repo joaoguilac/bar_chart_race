@@ -4,7 +4,7 @@ In the data folder you can get some input files to run the bar chart race.
 
 # Author(s)
 
-- Aluno: João Guilherme Lopes Alves da Costa (joguicosta@hotmail.com)
+- Aluno: João Guilherme Lopes Alves da Costa (joguicosta@hotmail.com) <a href="https://github.com/joaoguilac">@joaoguilac</a>
 - Turma: DIM0120 - LINGUAGEM DE PROGRAMAÇÃO I - T01 (2021.1)
 - Professor: Selan Rodrigues dos Santos
 
